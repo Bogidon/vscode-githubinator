@@ -3,7 +3,7 @@
   "displayName": "Githubinator",
   "description": "Quickly open files on Github and other providers. View blame information, copy permalinks and more. See the \"commands\" section of the README for more details.",
   "version": "0.2.3",
-  "publisher": "chdsbd",
+  "publisher": "bogdanvitoc",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "images/logo256.png",
   "galleryBanner": {
@@ -35,12 +35,16 @@
     "onCommand:extension.githubinator",
     "onCommand:extension.githubinatorCopy",
     "onCommand:extension.githubinatorCopyMaster",
+    "onCommand:extension.githubinatorCopyDev",
     "onCommand:extension.githubinatorCopyPermalink",
     "onCommand:extension.githubinatorCopyMasterPermalink",
+    "onCommand:extension.githubinatorCopyDevPermalink",
     "onCommand:extension.githubinatorOnMaster",
+    "onCommand:extension.githubinatorOnDev",
     "onCommand:extension.githubinatorPermalink",
     "onCommand:extension.githubinatorBlame",
     "onCommand:extension.githubinatorBlameOnMaster",
+    "onCommand:extension.githubinatorBlameOnDev",
     "onCommand:extension.githubinatorBlamePermalink",
     "onCommand:extension.githubinatorHistory",
     "onCommand:extension.githubinatorRepository",
@@ -65,6 +69,11 @@
         "category": "Githubinator"
       },
       {
+        "command": "extension.githubinatorCopyDev",
+        "title": "Copy Dev",
+        "category": "Githubinator"
+      },
+      {
         "command": "extension.githubinatorCopyPermalink",
         "title": "Copy Permalink",
         "category": "Githubinator"
@@ -75,8 +84,18 @@
         "category": "Githubinator"
       },
       {
+        "command": "extension.githubinatorCopyDevPermalink",
+        "title": "Copy Dev Permalink",
+        "category": "Githubinator"
+      },
+      {
         "command": "extension.githubinatorOnMaster",
         "title": "On Master",
+        "category": "Githubinator"
+      },
+      {
+        "command": "extension.githubinatorOnDev",
+        "title": "On Dev",
         "category": "Githubinator"
       },
       {
@@ -95,6 +114,11 @@
         "category": "Githubinator"
       },
       {
+        "command": "extension.githubinatorBlameOnDev",
+        "title": "Blame On Dev",
+        "category": "Githubinator"
+      },
+      {
         "command": "extension.githubinatorBlamePermalink",
         "title": "Blame Permalink",
         "category": "Githubinator"
@@ -107,11 +131,6 @@
       {
         "command": "extension.githubinatorHistory",
         "title": "History",
-        "category": "Githubinator"
-      },
-      {
-        "command": "extension.githubinatorOpenPR",
-        "title": "Open PR",
         "category": "Githubinator"
       },
       {
@@ -138,12 +157,22 @@
           "when": "config.githubinator.enable_context_menu"
         },
         {
+          "command": "extension.githubinatorCopyDev",
+          "group": "githubinator@3",
+          "when": "config.githubinator.enable_context_menu"
+        },
+        {
           "command": "extension.githubinatorCopyPermalink",
           "group": "githubinator@4",
           "when": "config.githubinator.enable_context_menu"
         },
         {
           "command": "extension.githubinatorCopyMasterPermalink",
+          "group": "githubinator@5",
+          "when": "config.githubinator.enable_context_menu"
+        },
+        {
+          "command": "extension.githubinatorCopyDevPermalink",
           "group": "githubinator@5",
           "when": "config.githubinator.enable_context_menu"
         },
@@ -164,6 +193,11 @@
         },
         {
           "command": "extension.githubinatorBlameOnMaster",
+          "group": "githubinator@9",
+          "when": "config.githubinator.enable_context_menu"
+        },
+        {
+          "command": "extension.githubinatorBlameOnDev",
           "group": "githubinator@9",
           "when": "config.githubinator.enable_context_menu"
         },

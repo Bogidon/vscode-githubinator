@@ -17,6 +17,10 @@ const COMMANDS: [string, IGithubinator][] = [
     { copyToClipboard: true, branch: "master" },
   ],
   [
+    "extension.githubinatorCopyDev", //
+    { copyToClipboard: true, branch: "dev" },
+  ],
+  [
     "extension.githubinatorCopyPermalink", //
     { copyToClipboard: true, permalink: true },
   ],
@@ -25,8 +29,16 @@ const COMMANDS: [string, IGithubinator][] = [
     { copyToClipboard: true, branch: "master", permalink: true },
   ],
   [
+    "extension.githubinatorCopyDevPermalink", //
+    { copyToClipboard: true, branch: "dev", permalink: true },
+  ],
+  [
     "extension.githubinatorOnMaster", //
     { copyToClipboard: true, openUrl: true, branch: "master" },
+  ],
+  [
+    "extension.githubinatorOnDev", //
+    { copyToClipboard: true, openUrl: true, branch: "dev" },
   ],
   [
     "extension.githubinatorPermalink", //
@@ -41,6 +53,10 @@ const COMMANDS: [string, IGithubinator][] = [
     { copyToClipboard: true, openUrl: true, blame: true, branch: "master" },
   ],
   [
+    "extension.githubinatorBlameOnDev", //
+    { copyToClipboard: true, openUrl: true, blame: true, branch: "dev" },
+  ],
+  [
     "extension.githubinatorBlamePermalink", //
     { copyToClipboard: true, openUrl: true, blame: true, permalink: true },
   ],
@@ -51,10 +67,6 @@ const COMMANDS: [string, IGithubinator][] = [
   [
     "extension.githubinatorRepository", //
     { copyToClipboard: true, openUrl: true, openRepo: true },
-  ],
-  [
-    "extension.githubinatorOpenPR", //
-    { copyToClipboard: true, openUrl: true, openPR: true },
   ],
   [
     "extension.githubinatorCompare", //
